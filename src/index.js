@@ -56,18 +56,28 @@
 
 // console.log(getInitials(userFullName));
 
-// 
-// 
-// произведение последовательных чисел от n1 до n2 
-
-
+//
+//
+// произведение последовательных чисел от n1 до n2
 let result = 1;
-function productNumbers(n2, n1 = 1) {
-	for (let i = n1; i <= n2; i++) {
-		result *= i;
 
-	}
-	return result;
+/**
+ * The function multiplies all numbers in the range from n1 to n2
+ * @param {Number} n2 - the number to which the multiplication goes
+ * @param {Number} [n1 = 1]  the number from which the multiplication proceeds
+ * @returns - the function returns the result of multiplying numbers in the range from n1 to n2
+ */
+function productNumbers(n2, n1 = 1) {
+  for (let i = n1; i <= n2; i++) {
+    result *= i;
+  }
+  return result;
 }
 
 console.log(productNumbers(10));
+
+const pow = function (a, b = 1) {
+  return a ** b;
+};
+
+console.log(pow(2, 3));
